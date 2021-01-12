@@ -19,10 +19,10 @@ public class BankAccountKata
         account.deposit(100);
 
         // us 2
-        account.withdrawalSomeSavings(300);
+        account.withdrawal(300);
 
         // us 2.1
-        account.withdrawalAllSavings();
+        account.withdrawal(800);
 
         //us 3
         System.out.println("Printing histories : ");

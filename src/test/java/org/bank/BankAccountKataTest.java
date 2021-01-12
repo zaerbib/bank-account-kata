@@ -38,16 +38,9 @@ public class BankAccountKataTest{
 
     @Test
     public void testWithDrawal(){
-        account.withdrawalSomeSavings(100);
-        account.withdrawalSomeSavings(100);
+        account.withdrawal(100);
+        account.withdrawal(100);
 
         assertThat(account.getCheckingAccount(), equalTo(800));
-    }
-
-    @Test
-    public void testWithDrawalAll(){
-        account.withdrawalAllSavings();
-
-        assertThat(account.getCheckingAccount(), equalTo(0));
     }
 }
